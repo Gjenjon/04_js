@@ -1,0 +1,266 @@
+/* body */
+  body{
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+/* header */
+  header{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(45, 123, 190, 0.5);
+    color: white;
+    width: 70%;
+  }
+  .title-container{
+    margin-left: 5px;
+    margin-right: auto;
+  }
+  
+  .nav-container{
+    display: flex;
+    padding: 5px;
+    
+    margin-left: auto;
+    margin-right: 5px;
+  }
+
+  .nav-li{
+    text-align: center;
+  }
+
+  .rand-candidates{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .img-container{
+  }
+
+  .eye-catch-image{
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+
+  .main-img{
+    width: 70%;
+    height: 70%;
+  }
+
+
+/* section search  */
+  .search-container{
+    text-align: center;
+  }  
+
+  .search{
+    padding-left: auto ;
+    padding-right: auto;
+    justify-content: center;
+    text-align: left;
+    display: flex;
+    margin-top: 10px;
+  }
+
+
+  /* ボタン */
+  /* solid012 */
+.button_solid012 a {
+  background: #6bb6ff;
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 40px;
+  padding: 10px 25px;
+  color: #003067;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+  border: 2px solid #000;
+  z-index: 1;
+  border-radius: 5px;
+  height: 10px;
+}
+.button_solid012 a:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #6bb6ff;
+  z-index: -1;
+  border: 2px solid #000;
+  border-radius: 5px;
+
+}
+.button_solid012 a:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform: translate3d(0,0.40rem,-1rem);
+  transform: translate3d(0,0.40rem,-1rem);
+  border: 2px solid #000;
+  border-radius: inherit;
+  background: #2b7fde;
+  -webkit-box-shadow: 0 0.6rem 0 0 rgb(0 0 0 / 20%);
+  box-shadow: 0 0.4rem 0 0 rgb(0 0 0 / 20%);
+  z-index: -2;
+  
+}
+.button_solid012 a i {
+  position: absolute;
+  right: 9px;
+
+}
+.button_solid012 a:hover {
+  transform: translate3d(0,0.2rem,-1rem);
+}
+.button_solid012 a:hover:after {
+  transform: translate3d(0,0.2rem,-1rem);
+  box-shadow: 0 0.2rem 0 0 rgb(0 0 0 / 20%);
+}
+
+/* テキストボックス */
+.cp_iptxt {
+	position: relative;
+	width: 30%;
+	margin: 10px 3%;
+
+}
+.cp_iptxt input[type='text'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	letter-spacing: 1px;
+	padding-left: 4em;
+}
+.cp_iptxt input[type='text']:focus {
+	outline: none;
+}
+.ef {
+	padding: 4px 0;
+	border: 0;
+	border-bottom: 1px solid #1b2538;
+	background-color: transparent;
+}
+.ef ~ .focus_line {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	transition: 0.4s;
+	background-color: #da3c41;
+}
+.ef:focus ~ .focus_line,
+.cp_iptxt.ef ~ .focus_line {
+	width: 100%;
+	transition: 0.4s;
+}
+.ef ~ label {
+	position: absolute;
+	z-index: -1;
+	top: 4px;
+	left: 0;
+	width: 100%;
+	transition: 0.3s;
+	letter-spacing: 0.5px;
+	color: #aaaaaa;
+}
+.ef:focus ~ label, .cp_iptxt.ef ~ label {
+	font-size: 12px;
+	top: -16px;
+	transition: 0.3s;
+	color: #da3c41;
+}
+
+/* result */
+.result-container{
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+}
+
+#card0{
+  margin-left: auto;
+  margin-right: 0px;
+  width: 500px;
+
+}
+
+#card1{
+  margin-left: 0px;
+  margin-right: auto;
+  width: 500px;
+}
+
+.card{
+  height: 180px;
+  width: 400px;
+  padding: 5px;
+  margin: 10px;
+  box-shadow: 5px 5px 0 0 rgba(45, 123, 190, 0.5);
+
+}
+
+.card-follows{
+  display: flex;
+  padding: 5px;
+}
+
+.card-explanation{
+  border: solid black 1px;
+  max-width: 120px;
+}
+
+.card-img-container{
+  max-height: 100px;
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+#js-title{
+  font-size: 16px;
+  padding: 5px;
+  font-weight: 800;
+  color: rgba(29, 62, 209, 0.872);
+}
+
+#js-card-explanation{
+    margin-left: 0px;
+  margin-right: auto;
+}
+
+.hover01 {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  background: white;
+  color: black!important;
+  border: solid 2px #111;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.hover01:hover {
+  background: rgba(45, 123, 190, 0.5);
+  color: white!important;
+  box-shadow: 5px 5px 0 0 white;
+}
+
+/* トレンド */
+#trendWrap{
+margin-left: auto;
+margin-right: auto ;
+width: 80%;
+}
